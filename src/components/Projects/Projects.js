@@ -2,13 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-// import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-// import chatify from "../../Assets/Projects/chatify.png";
-// import suicide from "../../Assets/Projects/suicide.png";
-import FIRSaathi from "../../Assets/Projects/FIRSaathi.jpeg"
+import FIRSaathi from "../../Assets/Projects/FIRSaathi.png"
 import Yaatrigan from "../../Assets/Projects/Yaatrigan.png"
 import JavaScript from "../../Assets/Projects/JavaScript.png"
+import SplashAI from "../../Assets/Projects/SplashAI.png"
+import Portfolio from "../../Assets/Projects/Portfolio.png"
 
 function Projects() {
   return (
@@ -42,6 +41,17 @@ function Projects() {
               ghLink="https://github.com/Saksham-Gupta-30/FIRSaathi"
             />
           </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard 
+              imgPath={SplashAI}
+              isBlog={false}
+              title="Splash AI"
+              description="MERN stack application to generate image using AI and showcase it to the community"
+              ghLink="https://github.com/Saksham-Gupta-30/Splash"
+              demoLink="https://splash-ai.netlify.app"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -59,7 +69,7 @@ function Projects() {
               imgPath={Yaatrigan}
               isBlog={false}
               title="Yaatrigan"
-              description="Yaatrigan is a travel advisor/companion website which lets you search anyplace around the world and gives you details about restaurants, hotels and atrractions of that place."
+              description="Yaatrigan is a travel advisor/companion website which lets you search anyplace around the world and gives you details about restaurants, hotels and attractions of that place."
               ghLink="https://github.com/Saksham-Gupta-30/Yaatrigan"
               demoLink="https://yaatrigan.netlify.app/"
             />
@@ -70,10 +80,21 @@ function Projects() {
               imgPath={suicide}
               isBlog={false}
               title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
+              description="Using 'Natural Language Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in suicide prevention."
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
             />
           </Col> */}
+
+          <Col md={4} className="project-card">
+            <ProjectCard 
+              imgPath={Portfolio}
+              isBlog={false}
+              title="Portfolio"
+              description="My portfolio website developed using React framework of JavaScript and deployed on Netlify"
+              ghLink="https://github.com/Saksham-Gupta-30/MyPortfolio"
+              demoLink="https://sakshamgupta30.netlify.app/"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
