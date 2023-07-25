@@ -8,6 +8,7 @@ import Yaatrigan from "../../Assets/Projects/Yaatrigan.png"
 import JavaScript from "../../Assets/Projects/JavaScript.png"
 import SplashAI from "../../Assets/Projects/SplashAI.png"
 import Portfolio from "../../Assets/Projects/Portfolio.png"
+import Crowdfunding from "../../Assets/Projects/Crowdfunding.png"
 
 function Projects() {
   return (
@@ -50,6 +51,17 @@ function Projects() {
               description="MERN stack application to generate image using AI and showcase it to the community"
               ghLink="https://github.com/Saksham-Gupta-30/Splash"
               demoLink="https://splash-ai.netlify.app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard 
+              imgPath={Crowdfunding}
+              isBlog={false}
+              title="Crowdfunding"
+              description="Blockchain-based web app! Create and donate to campaigns securely, transparently, and globally. Embrace decentralization and smart contracts for a seamless and empowering experience"
+              ghLink="https://github.com/Saksham-Gupta-30/Crowdfunding"
+              demoLink="https://crowdfunding-23.netlify.app"
             />
           </Col>
 
