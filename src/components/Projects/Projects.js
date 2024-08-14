@@ -9,6 +9,8 @@ import JavaScript from "../../Assets/Projects/JavaScript.png"
 import SplashAI from "../../Assets/Projects/SplashAI.png"
 import Portfolio from "../../Assets/Projects/Portfolio.png"
 import Crowdfunding from "../../Assets/Projects/Crowdfunding.png"
+import MyMedi from "../../Assets/Projects/MyMedi.png"
+import AIKhabri from "../../Assets/Projects/AIKhabri.png"
 
 function Projects() {
   return (
@@ -35,6 +37,17 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={MyMedi}
+              isBlog={false}
+              title="My Medi"
+              description="My-Medi is a secure platform that allows you to store, manage, and share your medical records using blockchain technology."
+              ghLink="https://github.com/Saksham-Gupta-30/My-Medi"
+              demoLink="https://my-medi-nine.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={FIRSaathi}
               isBlog={false}
               title="FIRSaathi"
@@ -42,9 +55,9 @@ function Projects() {
               ghLink="https://github.com/Saksham-Gupta-30/FIRSaathi"
             />
           </Col>
-          
+
           <Col md={4} className="project-card">
-            <ProjectCard 
+            <ProjectCard
               imgPath={SplashAI}
               isBlog={false}
               title="Splash AI"
@@ -55,7 +68,18 @@ function Projects() {
           </Col>
 
           <Col md={4} className="project-card">
-            <ProjectCard 
+            <ProjectCard
+              imgPath={AIKhabri}
+              isBlog={false}
+              title="AI Khabri"
+              description="This project leverages artificial intelligence to summarize news articles, tried presenting them in a format that resembles a traditional newspaper."
+              ghLink="https://github.com/Saksham-Gupta-30/AI-Khabri"
+              demoLink="https://ai-khabri.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Crowdfunding}
               isBlog={false}
               title="Crowdfunding"
@@ -72,7 +96,7 @@ function Projects() {
               title="Editor.io"
               description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file. Both the editor supports auto save of work using Local Storage"
               ghLink="https://github.com/Saksham-Gupta-30/Editor.io"
-              demoLink="https://editrio.netlify.app/"              
+              demoLink="https://editrio.netlify.app/"
             />
           </Col>
 
@@ -98,7 +122,7 @@ function Projects() {
           </Col> */}
 
           <Col md={4} className="project-card">
-            <ProjectCard 
+            <ProjectCard
               imgPath={Portfolio}
               isBlog={false}
               title="Portfolio"

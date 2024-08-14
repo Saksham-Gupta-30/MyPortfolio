@@ -4,10 +4,10 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 // import logo from "../Assets/logo.png";
 import logo2 from "../Assets/logo2.png";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+// import { CgGitFork } from "react-icons/cg";
+// import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -85,8 +85,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/resume"
+                href="https://drive.google.com/file/d/1N02wFHcQ9ef3sIqpsFYpDIzKSfT8-0HV/view"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume

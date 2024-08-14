@@ -2,7 +2,7 @@
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Resume Saksham.pdf";
+import pdf from "../../Assets/../Assets/Resume.pdf";
 // import { AiOutlineDownload,  } from "react-icons/ai";
 import { FiFileText } from "react-icons/fi";
 import { pdfjs } from "react-pdf";
@@ -11,7 +11,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 // const resumeLink =
-  // "https://drive.google.com/file/d/1KiILaUdqJVU3oJue1xrQzo_hEynanoD2/view?usp=share_link";
+//   "https://drive.google.com/file/d/1KiILaUdqJVU3oJue1xrQzo_hEynanoD2/view?usp=share_link";
 
 function ResumeNew() {
   // const [width, setWidth] = useState(1200);
@@ -21,7 +21,7 @@ function ResumeNew() {
   // }, []);
 
   return (
-    <div>
+    <div className="mh-100">
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
@@ -41,11 +41,11 @@ function ResumeNew() {
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
           <img src={resumeLink} alt="resume" style={{ width: "100%" }} />
-        </Row> */}
+        </Row>
         <br/>
 
-        {/* <Row style={{ justifyContent: "center", position: "relative" }}> */}
-          {/* <Button
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
             variant="primary"
             href={pdf}
             target="_blank"
@@ -53,11 +53,8 @@ function ResumeNew() {
           >
             <AiOutlineDownload />
             &nbsp;Download CV
-          </Button> */}
-          
-          
-          
-        {/* </Row> */}
+          </Button>
+        </Row> */}
       </Container>
     </div>
   );
